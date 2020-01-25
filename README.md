@@ -1,27 +1,61 @@
-# GitThem
+# git-them
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+> This project features an Angular app that consumes the GitHub API to retrieve user and repository information.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+git-them app provides a way to search and display a GitHub user's information that includes their username, profile photo and repository listings.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get you started you can simply clone the `git-them` repository and install the dependencies.
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+You need git to clone the `git-them` repository. You can get git from [here](https://git-scm.com/).
 
-## Running unit tests
+You must also have Node.js and its package manager (npm) installed. You can get them from [here](https://nodejs.org/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Clone `git-them`
 
-## Running end-to-end tests
+Clone the `git-them` repository using git:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+git clone https://github.com/trucktar/git-them.git
+cd git-them
+```
 
-## Further help
+### Install Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+There are two kinds of dependencies in this project: tools and Angular framework code.
+
+To install these dependencies and setup the project environment, simply run:
+
+```
+npm install
+```
+
+### Run the Application
+
+The project is preconfigured with a simple development web server. The simplest way to start this server is:
+
+```
+ng serve
+```
+
+Now browse to the app at [`localhost:4200/`](local-app-url).
+
+## Usage
+
+On startup, the app displays [TruckTAR's](https://github.com/trucktar/) user information and public repositories. To view a different user's information, navigate to the user-search page by clicking the `Search User` link in the navbar.
+
+In the form displayed, enter a username and click submit. If the user exists, you'll be redirected to the user-repos page where the user's information and repositories are listed.
+
+## Contact
+
+Nyota Mwangi - [@trucktar](https://twitter.com/trucktar/) - nyota.benjamin@gmail.com  
+Project Link: [https://trucktar.github.io/git-them/](https://trucktar.github.io/git-them/)
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
